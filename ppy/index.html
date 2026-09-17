@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAHIMA FABRICS | Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                RAHIMA <span>FABRICS</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <button onclick="searchProduct()">🔍</button>
+               <a
+    href="https://wa.me/8801920613733?text=Hello%20RAHIMA%20FABRICS!%20I%20want%20to%20place%20an%20order."
+    target="_blank"
+    class="whatsapp-button"
+>
+    💬 WhatsApp
+</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">NEW COLLECTION 2026</p>
+
+            <h1>
+                STYLE THAT
+                <br>
+                <span>FEELS LIKE YOU.</span>
+            </h1>
+
+            <p>
+                Discover modern fashion designed for confidence,
+                comfort and everyday elegance.
+            </p>
+
+            <a <a
+    href="https://wa.me/8801920613733?text=Hi!%20I%20want%20to%20shop%20from%20your%20website."
+    target="_blank"
+    class="hero-button"
+>
+    SHOP NOW
+</a>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section id="collections" class="categories">
+
+        <h2>Explore Collections</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <div class="category-image women"></div>
+                <h3>Women's Fashion</h3>
+                <button>Explore</button>
+            </div>
+
+            <div class="category">
+                <div class="category-image new"></div>
+                <h3>New Arrivals</h3>
+                <button>Explore</button>
+            </div>
+
+            <div class="category">
+                <div class="category-image traditional"></div>
+                <h3>Elegant Wear</h3>
+                <button>Explore</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="shop" class="shop">
+
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+            <h2>Featured Products</h2>
+        </div>
+
+        <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image image1">
+                    <span class="sale">NEW</span>
+                </div>
+
+                <div class="product-info">
+                    <p>Women's Collection</p>
+                    <h3> জমজম থ্রি পিস</h3>
+
+                    <div class="price">
+                        ৳850
+                    </div>
+<button onclick="orderNow('জমজম থ্রি পিস', 850)">
+    ORDER NOW
+</button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image image2">
+                    <span class="sale">NEW</span>
+                </div>
+
+                <div class="product-info">
+                    <p>Premium Collection</p>
+                    <h3> জমজম থ্রি পিস</h3>
+
+                    <div class="price">
+                        ৳850
+                    </div>
+
+                    <button onclick="orderNow('জমজম থ্রি পিস', 850)">  ORDER NOW</button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image image3"></div>
+
+                <div class="product-info">
+                    <p>Elegant Collection</p>
+                    <h3> জমজম থ্রি পিস</h3>
+
+                    <div class="price">
+                        ৳850
+                    </div>
+
+                    <button onclick="orderNow('জমজম থ্রি পিস', 850)">
+    ORDER NOW
+</button>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+
+                <div class="product-image image4">
+                    <span class="sale">SALE</span>
+                </div>
+
+                <div class="product-info">
+                    <p>Special Collection</p>
+                    <h3>জমজম থ্রি পিস</h3>
+
+                    <div class="price">
+                        <del>৳1050</del>
+                        ৳950
+                    </div>
+
+                   <button onclick="orderNow('জমজম থ্রি পিস', 950)">
+    ORDER NOW
+</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROMOTION -->
+    <section class="promotion">
+
+        <div>
+            <p>LIMITED TIME OFFER</p>
+
+            <h2>
+                GET 20% OFF
+                <br>
+                YOUR FIRST ORDER
+            </h2>
+
+            <button onclick="subscribe()">
+                GET OFFER
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div class="about-text">
+
+            <p>ABOUT US</p>
+
+            <h2>
+                Fashion Made
+                <br>
+                With Passion.
+            </h2>
+
+            <p>
+                RAHIMA FABRICS is a modern fashion brand focused on
+                creating beautiful, comfortable and stylish clothing
+                for today's generation.
+            </p>
+
+            <p>
+                We believe fashion should not only look good —
+                it should make you feel confident.
+            </p>
+
+        </div>
+
+        <div class="about-box">
+            <h3>RAHIMA FABRICS</h3>
+            <p>Wear your confidence.</p>
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <h2>Join Our Fashion Community</h2>
+
+        <p>
+            Get updates about new collections and special offers.
+        </p>
+
+        <div class="email-box">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <button onclick="subscribe()">
+                SUBSCRIBE
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>RAHIMA FABRICS</h2>
+                <p>Modern fashion for modern you.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📞 +880 01720-256619</p>
+                <p>📧 reajulhoque12@gmail.com</p>
+                <p>📍 Dhaka, Narayanganj, Rupganj, Bhulta, Bangladesh</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Rahima fabrics. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

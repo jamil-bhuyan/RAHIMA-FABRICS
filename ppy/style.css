@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f6f2;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d4a84f;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d4a84f;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-icons button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.25)
+        ),
+        url(b.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+
+    padding: 30px;
+
+    color: white;
+}
+
+.small-title {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4a84f;
+}
+
+.hero p {
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #d4a84f;
+    color: #111;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.hero-button:hover {
+    background: white;
+}
+
+
+/* ================= CATEGORIES ================= */
+
+.categories {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category {
+    background: white;
+    padding-bottom: 25px;
+}
+
+.category-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.women {
+    background-image:
+        url(n\ \(1\).jpg);
+}
+
+.new {
+    background-image:
+        url(n\(2\).jpg);
+}
+
+.traditional {
+    background-image:
+        url(n\(3\).jpg);
+}
+
+.category h3 {
+    margin: 20px 0;
+}
+
+.category button {
+    padding: 10px 25px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ================= SHOP ================= */
+
+.shop {
+    padding: 90px 7%;
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #b08735;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: #f8f6f2;
+}
+
+.product-image {
+    height: 400px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.image1 {
+    background-image:
+        url(m\(1\).jpg);
+}
+
+.image2 {
+    background-image:
+        url(m\(2\).jpg);
+}
+
+.image3 {
+    background-image:
+        url(m\(3\).jpg);
+}
+
+.image4 {
+    background-image:
+        url(m\(4\).jpg);
+}
+
+.sale {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background: #111;
+    color: white;
+
+    padding: 7px 12px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info p {
+    color: #888;
+    font-size: 12px;
+}
+
+.product-info h3 {
+    margin: 8px 0 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price del {
+    color: #999;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.product-info button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    background: #111;
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.product-info button:hover {
+    background: #d4a84f;
+    color: #111;
+}
+
+
+/* ================= PROMOTION ================= */
+
+.promotion {
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.6),
+            rgba(0,0,0,.6)
+        ),
+        url(c.jpg);
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.promotion p {
+    letter-spacing: 4px;
+    color: #d4a84f;
+}
+
+.promotion h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.promotion button {
+    padding: 14px 30px;
+
+    border: none;
+
+    background: #d4a84f;
+    color: #111;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-text > p:first-child {
+    color: #b08735;
+    letter-spacing: 3px;
+}
+
+.about h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-box {
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+    color: white;
+
+    text-align: center;
+}
+
+.about-box h3 {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.about-box p {
+    color: #d4a84f;
+    margin-top: 15px;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter {
+    text-align: center;
+    padding: 80px 20px;
+
+    background: #eee9df;
+}
+
+.newsletter h2 {
+    font-size: 35px;
+}
+
+.newsletter p {
+    margin: 15px 0 30px;
+}
+
+.email-box {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+}
+
+.email-box input {
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+}
+
+.email-box button {
+    padding: 15px 25px;
+
+    border: none;
+
+    background: #111;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+    color: white;
+
+    padding: 60px 7% 20px;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-content h2 {
+    color: #d4a84f;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    display: block;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+
+    text-align: center;
+
+    margin-top: 50px;
+    padding-top: 20px;
+
+    color: #777;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .promotion h2 {
+        font-size: 35px;
+    }
+
+    .email-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
